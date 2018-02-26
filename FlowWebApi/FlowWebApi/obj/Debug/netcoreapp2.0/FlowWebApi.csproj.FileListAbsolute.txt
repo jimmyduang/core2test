@@ -1,0 +1,12 @@
+c:\users\administrator\personal\visual studio 2017\Projects\FlowWebApi\FlowWebApi\bin\Debug\netcoreapp2.0\FlowWebApi.deps.json
+c:\users\administrator\personal\visual studio 2017\Projects\FlowWebApi\FlowWebApi\bin\Debug\netcoreapp2.0\FlowWebApi.runtimeconfig.json
+c:\users\administrator\personal\visual studio 2017\Projects\FlowWebApi\FlowWebApi\bin\Debug\netcoreapp2.0\FlowWebApi.runtimeconfig.dev.json
+c:\users\administrator\personal\visual studio 2017\Projects\FlowWebApi\FlowWebApi\bin\Debug\netcoreapp2.0\FlowWebApi.dll
+c:\users\administrator\personal\visual studio 2017\Projects\FlowWebApi\FlowWebApi\bin\Debug\netcoreapp2.0\FlowWebApi.pdb
+c:\users\administrator\personal\visual studio 2017\Projects\FlowWebApi\FlowWebApi\obj\Debug\netcoreapp2.0\FlowWebApi.csproj.CoreCompileInputs.cache
+c:\users\administrator\personal\visual studio 2017\Projects\FlowWebApi\FlowWebApi\obj\Debug\netcoreapp2.0\FlowWebApi.AssemblyInfoInputs.cache
+c:\users\administrator\personal\visual studio 2017\Projects\FlowWebApi\FlowWebApi\obj\Debug\netcoreapp2.0\FlowWebApi.AssemblyInfo.cs
+c:\users\administrator\personal\visual studio 2017\Projects\FlowWebApi\FlowWebApi\obj\Debug\netcoreapp2.0\FlowWebApi.dll
+c:\users\administrator\personal\visual studio 2017\Projects\FlowWebApi\FlowWebApi\obj\Debug\netcoreapp2.0\FlowWebApi.pdb
+c:\users\administrator\personal\visual studio 2017\Projects\FlowWebApi\FlowWebApi\bin\Debug\netcoreapp2.0\nlog.config
+C:\Users\Administrator\Personal\Visual Studio 2017\Projects\FlowWebApi\FlowWebApi\obj\Debug\netcoreapp2.0\FlowWebApi.csprojResolveAssemblyReference.cache

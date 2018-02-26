@@ -1,0 +1,13 @@
+2018-02-23 16:08:26.2924|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-23 16:08:26.5384|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-23 16:08:26.5534|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-23 16:08:26.6194|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 84.5728ms
+2018-02-23 16:08:26.6284|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 367.1243ms 200 application/json; charset=utf-8
+2018-02-23 16:08:26.6424|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-23 16:08:26.6424|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.9944ms 404 text/plain
+2018-02-23 16:09:02.8904|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:48449/api/flow/1 application/json 44
+2018-02-23 16:09:02.9384|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.Delete (FlowWebApi) with arguments (1) - ModelState is Valid
+2018-02-23 16:09:02.9534|INFO|FlowWebApi.Services.CloudMailService|从jimdang9527@gmail.com给jimdang9527@foxmail.com通过LocalMailService发送邮件！
+2018-02-23 16:09:02.9644|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-02-23 16:09:02.9704|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.Delete (FlowWebApi) in 44.3375ms
+2018-02-23 16:09:02.9704|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 85.9531ms 200 

@@ -1,0 +1,972 @@
+2018-02-24 13:22:34.5645|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 13:22:35.0065|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 13:22:35.0375|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 13:22:35.1145|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 110.5039ms
+2018-02-24 13:22:35.1145|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 589.573ms 200 application/json; charset=utf-8
+2018-02-24 13:22:35.1645|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 13:22:35.1645|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27.6274ms 404 text/plain
+2018-02-24 13:23:01.2595|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow/1 application/json 
+2018-02-24 13:23:01.3095|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.Get (FlowWebApi) with arguments (1) - ModelState is Valid
+2018-02-24 13:23:01.3855|FATAL|FlowWebApi.Controllers.FlowController|1异常走起
+2018-02-24 13:23:01.4145|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 13:23:01.4280|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.Get (FlowWebApi) in 125.2933ms
+2018-02-24 13:23:01.4425|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 174.3408ms 500 text/plain; charset=utf-8
+2018-02-24 13:57:23.7105|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 13:57:23.9395|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 13:57:23.9535|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 13:57:24.0155|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 78.5031ms
+2018-02-24 13:57:24.0325|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 356.7403ms 200 application/json; charset=utf-8
+2018-02-24 13:57:24.0325|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 13:57:24.0515|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5.4391ms 404 text/plain
+2018-02-24 13:58:03.4855|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/MyContext application/json 
+2018-02-24 13:58:03.7745|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-02-24 13:58:03.9265|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2018-02-24 13:58:03.9565|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [flows] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [Price] decimal(8,2) NOT NULL,
+    CONSTRAINT [PK_flows] PRIMARY KEY ([Id])
+);
+2018-02-24 13:58:03.9565|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.MyContextController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 13:58:03.9745|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-02-24 13:58:03.9995|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.MyContextController.Get (FlowWebApi) in 484.0543ms
+2018-02-24 13:58:03.9995|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 522.5631ms 200 
+2018-02-24 14:01:34.4460|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 14:01:34.7655|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 14:01:34.7955|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 14:01:34.8575|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 94.5354ms
+2018-02-24 14:01:34.8865|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 471.3064ms 200 application/json; charset=utf-8
+2018-02-24 14:01:34.9185|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 14:01:34.9435|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 24.3155ms 404 text/plain
+2018-02-24 14:03:19.7925|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/MyContext application/json 
+2018-02-24 14:03:20.0075|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-02-24 14:03:30.7335|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (110ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [ProductDB];
+2018-02-24 14:03:30.7725|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5 EXEC(N'ALTER DATABASE [ProductDB] SET READ_COMMITTED_SNAPSHOT ON;');
+2018-02-24 14:03:30.8035|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [flows] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [Price] decimal(8,2) NOT NULL,
+    CONSTRAINT [PK_flows] PRIMARY KEY ([Id])
+);
+2018-02-24 14:03:30.8105|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.MyContextController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 14:03:30.8105|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-02-24 14:03:30.8435|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.MyContextController.Get (FlowWebApi) in 11021.437ms
+2018-02-24 14:03:30.8685|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11072.9719ms 200 
+2018-02-24 14:18:35.6210|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-02-24 14:18:35.7650|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2018-02-24 14:24:21.2950|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-02-24 14:24:21.3820|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 14:24:21.4070|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2018-02-24 14:24:21.4070|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 14:24:21.4070|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-02-24 14:24:21.4070|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20180224061835_flowMigration'.
+2018-02-24 14:24:21.4670|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [flows] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [Price] decimal(8,2) NOT NULL,
+    CONSTRAINT [PK_flows] PRIMARY KEY ([Id])
+);
+2018-02-24 14:29:44.1740|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 14:29:44.4270|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 14:29:44.4620|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 14:29:44.5340|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 112.4268ms
+2018-02-24 14:29:44.5420|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 404.0875ms 200 application/json; charset=utf-8
+2018-02-24 14:29:44.5600|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 14:29:44.5840|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8.5251ms 404 text/plain
+2018-02-24 14:30:01.5630|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/MyContext application/json 
+2018-02-24 14:30:01.7470|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-02-24 14:30:12.4560|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (93ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [ProductDB];
+2018-02-24 14:30:12.4910|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (28ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5 EXEC(N'ALTER DATABASE [ProductDB] SET READ_COMMITTED_SNAPSHOT ON;');
+2018-02-24 14:30:12.5440|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2018-02-24 14:30:12.5440|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 14:30:12.5610|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-02-24 14:30:12.5610|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20180224061835_flowMigration'.
+2018-02-24 14:30:12.5860|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [flows] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [Price] decimal(8,2) NOT NULL,
+    CONSTRAINT [PK_flows] PRIMARY KEY ([Id])
+);
+2018-02-24 14:30:12.5940|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20180224061835_flowMigration', N'2.0.1-rtm-125');
+2018-02-24 14:30:12.6180|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.MyContextController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 14:30:12.6300|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-02-24 14:30:12.6550|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.MyContextController.Get (FlowWebApi) in 11061.964ms
+2018-02-24 14:30:12.6550|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11190.1891ms 200 
+2018-02-24 14:32:38.5610|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-02-24 14:32:38.6490|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 14:32:38.6490|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 14:32:38.6560|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-02-24 14:32:38.6560|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-02-24 14:34:23.0080|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-02-24 14:34:23.0930|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 14:34:23.0970|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 14:34:23.0970|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-02-24 14:34:23.0970|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20180224063238_flowadddesmigration'.
+2018-02-24 14:34:23.1130|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [flows] ADD [des] nvarchar(200) NULL;
+2018-02-24 14:34:23.1130|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20180224063238_flowadddesmigration', N'2.0.1-rtm-125');
+2018-02-24 14:34:23.1130|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 14:34:23.1130|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 14:34:23.1130|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-02-24 14:34:23.1130|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-02-24 14:38:35.1280|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 14:38:35.3530|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 14:38:35.3680|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 14:38:35.4450|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 85.865ms
+2018-02-24 14:38:35.4450|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 351.835ms 200 application/json; charset=utf-8
+2018-02-24 14:38:35.4910|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 14:38:35.4910|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 25.2799ms 404 text/plain
+2018-02-24 14:38:38.4330|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/MyContext application/json 
+2018-02-24 14:38:38.6200|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-02-24 14:38:38.6890|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 14:38:38.6890|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 14:38:38.7220|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-02-24 14:38:38.7500|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-02-24 14:38:38.7770|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.MyContextController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 14:38:38.7860|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-02-24 14:38:38.7860|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.MyContextController.Get (FlowWebApi) in 349.7082ms
+2018-02-24 14:38:38.8000|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 368.674ms 200 
+2018-02-24 14:48:21.6270|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 14:48:21.8460|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 14:48:21.8850|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 14:48:21.9620|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 99.6433ms
+2018-02-24 14:48:21.9620|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 370.6506ms 200 application/json; charset=utf-8
+2018-02-24 14:48:21.9940|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 14:48:22.0220|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11.8512ms 404 text/plain
+2018-02-24 14:50:06.2440|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 14:50:06.4670|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 14:50:06.5070|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 14:50:06.5650|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 100.9965ms
+2018-02-24 14:50:06.5780|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 360.5569ms 200 application/json; charset=utf-8
+2018-02-24 14:50:06.6110|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 14:50:06.6110|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 24.9744ms 404 text/plain
+2018-02-24 14:55:56.7310|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 14:55:56.9720|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 14:55:56.9900|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 14:55:57.0600|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 84.2271ms
+2018-02-24 14:55:57.0730|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 366.2764ms 200 application/json; charset=utf-8
+2018-02-24 14:55:57.0990|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 14:55:57.0990|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.3448ms 404 text/plain
+2018-02-24 15:03:17.1770|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 15:03:17.3250|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (29ms) [Parameters=[@p0='?' (Size = 50), @p1='?', @p2='?' (Size = 200), @p3='?' (Size = 50), @p4='?', @p5='?' (Size = 200), @p6='?' (Size = 50), @p7='?', @p8='?' (Size = 200)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([Id] int, [_Position] [int]);
+MERGE [flows] USING (
+VALUES (@p0, @p1, @p2, 0),
+(@p3, @p4, @p5, 1),
+(@p6, @p7, @p8, 2)) AS i ([Name], [Price], [des], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Name], [Price], [des])
+VALUES (i.[Name], i.[Price], i.[des])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted0;
+
+SELECT [t].[Id] FROM [flows] t
+INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];
+2018-02-24 15:03:20.5150|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 15:03:20.6710|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 15:03:20.7050|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 15:03:20.7840|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 111.5089ms
+2018-02-24 15:03:20.7960|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 292.4302ms 200 application/json; charset=utf-8
+2018-02-24 15:03:20.8120|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 15:03:20.8120|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5.599ms 404 text/plain
+2018-02-24 15:54:48.3960|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 15:54:48.5040|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-02-24 15:54:48.5100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 15:54:48.5100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 15:54:48.5100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-02-24 15:54:48.5100|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-02-24 15:55:28.1100|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 15:55:28.2150|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-02-24 15:55:28.2220|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 15:55:28.2220|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 15:55:28.2220|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-02-24 15:55:28.2220|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-02-24 15:55:28.2220|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 15:55:28.2220|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 15:55:28.2220|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-02-24 15:55:28.2220|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-02-24 17:18:47.5580|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 17:18:50.5340|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 17:18:50.6990|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 17:18:50.7130|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 17:18:50.7780|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 76.7334ms
+2018-02-24 17:18:50.7880|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 286.0462ms 200 application/json; charset=utf-8
+2018-02-24 17:18:50.8230|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 17:18:50.8230|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 25.8058ms 404 text/plain
+2018-02-24 17:19:22.3340|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 17:19:22.3440|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:19:22.4400|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:19:22.4400|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:19:22.4640|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 17:19:22.4890|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRCUE61S83", Request id "0HLBRCUE61S83:00000001": An unhandled exception was thrown by the application.
+2018-02-24 17:19:22.4890|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 162.3965ms 500 
+2018-02-24 17:19:40.2190|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 17:19:40.2290|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:19:40.2540|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:19:40.2540|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:19:40.2810|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 17:19:40.3050|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRCUE61S83", Request id "0HLBRCUE61S83:00000002": An unhandled exception was thrown by the application.
+2018-02-24 17:19:40.3050|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 91.5218ms 500 
+2018-02-24 17:20:01.4330|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 17:20:04.2680|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 17:20:04.4180|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 17:20:04.4470|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 17:20:04.5090|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 93.4153ms
+2018-02-24 17:20:04.5280|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 276.2966ms 200 application/json; charset=utf-8
+2018-02-24 17:20:04.5630|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 17:20:04.5920|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.5697ms 404 text/plain
+2018-02-24 17:20:10.9150|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 17:20:10.9290|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:20:10.9820|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:20:10.9900|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:20:11.0100|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 17:20:11.0350|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRCV46JURJ", Request id "0HLBRCV46JURJ:00000001": An unhandled exception was thrown by the application.
+2018-02-24 17:20:11.0350|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 129.2502ms 500 
+2018-02-24 17:20:31.8720|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow  
+2018-02-24 17:20:31.9040|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:20:31.9280|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:20:31.9280|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:20:31.9490|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 17:20:31.9740|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRCV46JURI", Request id "0HLBRCV46JURI:00000003": An unhandled exception was thrown by the application.
+2018-02-24 17:20:31.9740|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 110.1829ms 500 
+2018-02-24 17:24:39.0410|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 17:24:41.9180|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 17:24:42.0790|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 17:24:42.0900|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 17:24:42.1470|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 71.3878ms
+2018-02-24 17:24:42.1790|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 258.4189ms 200 application/json; charset=utf-8
+2018-02-24 17:24:42.2120|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 17:24:42.2370|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 24.9737ms 404 text/plain
+2018-02-24 17:25:30.4920|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 17:25:30.4920|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:25:30.5630|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:25:30.5680|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:25:30.5870|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 17:25:30.6130|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRD1MU4DHK", Request id "0HLBRD1MU4DHK:00000001": An unhandled exception was thrown by the application.
+2018-02-24 17:25:30.6200|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 126.6412ms 500 
+2018-02-24 17:25:57.1740|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow  
+2018-02-24 17:25:57.1850|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:25:57.2080|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:25:57.2130|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:25:57.2380|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 17:25:57.2690|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRD1MU4DHJ", Request id "0HLBRD1MU4DHJ:00000003": An unhandled exception was thrown by the application.
+2018-02-24 17:25:57.2690|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 99.1498ms 500 
+2018-02-24 17:27:50.2500|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 17:27:53.1600|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 17:27:53.3190|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 17:27:53.3550|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 17:27:53.4230|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 107.5485ms
+2018-02-24 17:27:53.4400|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 291.7351ms 200 application/json; charset=utf-8
+2018-02-24 17:27:53.4810|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 17:27:53.4810|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27.1696ms 404 text/plain
+2018-02-24 17:27:58.3570|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow  
+2018-02-24 17:27:58.3690|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:27:58.4480|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:27:58.4480|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:27:58.4750|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 17:27:58.5040|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRD3FU4KO2", Request id "0HLBRD3FU4KO2:00000003": An unhandled exception was thrown by the application.
+2018-02-24 17:27:58.5040|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 157.2366ms 500 
+2018-02-24 17:28:00.7150|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow/1  
+2018-02-24 17:28:00.7430|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-02-24 17:28:00.7560|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 17:28:00.7560|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 17:28:00.7690|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-02-24 17:28:00.7960|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-02-24 17:28:06.2400|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.Get (FlowWebApi) with arguments (1) - ModelState is Valid
+2018-02-24 17:28:10.1630|FATAL|FlowWebApi.Controllers.FlowController|1异常走起
+2018-02-24 17:28:11.2110|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 17:28:11.2190|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.Get (FlowWebApi) in 10477.8374ms
+2018-02-24 17:28:11.2390|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10531.6048ms 500 text/plain; charset=utf-8
+2018-02-24 17:29:52.7040|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 17:29:52.7260|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:29:52.8040|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:29:52.8200|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:29:52.8680|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 17:29:52.8960|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRD3FU4KO4", Request id "0HLBRD3FU4KO4:00000001": An unhandled exception was thrown by the application.
+2018-02-24 17:29:52.9020|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 201.2803ms 500 
+2018-02-24 17:30:24.6830|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 17:30:24.6830|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:30:24.7170|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:30:24.7170|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:30:24.7420|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 17:30:24.7690|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRD3FU4KO4", Request id "0HLBRD3FU4KO4:00000002": An unhandled exception was thrown by the application.
+2018-02-24 17:30:24.7750|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 91.1925ms 500 
+2018-02-24 17:30:26.3610|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 17:30:26.3700|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:30:26.3920|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:30:26.3970|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:30:26.4190|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 17:30:26.4470|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRD3FU4KO4", Request id "0HLBRD3FU4KO4:00000003": An unhandled exception was thrown by the application.
+2018-02-24 17:30:26.4470|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 91.5263ms 500 
+2018-02-24 17:30:27.0950|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 17:30:27.0950|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:30:27.1250|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:30:27.1330|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 17:30:27.1690|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 17:30:27.1940|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRD3FU4KO4", Request id "0HLBRD3FU4KO4:00000004": An unhandled exception was thrown by the application.
+2018-02-24 17:30:27.1940|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 103.1823ms 500 
+2018-02-24 19:16:46.2460|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 19:16:49.3050|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 19:16:49.4720|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 19:16:49.4720|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 19:16:49.5640|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 89.9952ms
+2018-02-24 19:16:49.5640|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 286.7074ms 200 application/json; charset=utf-8
+2018-02-24 19:16:49.6140|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 19:16:49.6140|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.1441ms 404 text/plain
+2018-02-24 19:17:55.0660|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 19:17:55.0730|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetFlow (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:17:55.1530|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetFlow (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:17:55.1620|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetFlow (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:17:55.1820|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 19:17:55.2080|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRF0BR3FQK", Request id "0HLBRF0BR3FQK:00000001": An unhandled exception was thrown by the application.
+2018-02-24 19:17:55.2140|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 148.4173ms 500 
+2018-02-24 19:18:24.4990|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 19:18:24.5110|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetFlow (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:18:24.5320|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetFlow (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:18:24.5540|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetFlow (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:18:24.5740|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 19:18:24.6010|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRF0BR3FQK", Request id "0HLBRF0BR3FQK:00000002": An unhandled exception was thrown by the application.
+2018-02-24 19:18:24.6010|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 106.6394ms 500 
+2018-02-24 19:19:29.6010|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 19:19:29.6130|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetFlow (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:19:29.6350|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetFlow (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:19:29.6460|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetFlow (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:19:29.6650|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 19:19:29.6900|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRF0BR3FQK", Request id "0HLBRF0BR3FQK:00000003": An unhandled exception was thrown by the application.
+2018-02-24 19:19:29.6900|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 100.736ms 500 
+2018-02-24 19:31:18.5130|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 19:31:21.5060|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 19:31:21.6640|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 19:31:21.6960|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 19:31:21.7610|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 99.7487ms
+2018-02-24 19:31:21.7720|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 284.3389ms 200 application/json; charset=utf-8
+2018-02-24 19:31:21.7960|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 19:31:21.8040|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.4559ms 404 text/plain
+2018-02-24 19:31:25.1090|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 19:31:25.1220|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetFlow (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:31:25.1760|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetFlow (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:31:25.1820|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetFlow (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:31:25.2020|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 19:31:25.2280|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRF8FPK3SJ", Request id "0HLBRF8FPK3SJ:00000001": An unhandled exception was thrown by the application.
+2018-02-24 19:31:25.2540|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 131.672ms 500 
+2018-02-24 19:31:50.2500|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 19:31:53.1850|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 19:31:53.3580|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 19:31:53.3880|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 19:31:53.4520|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 97.2454ms
+2018-02-24 19:31:53.4860|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 295.0932ms 200 application/json; charset=utf-8
+2018-02-24 19:31:53.5040|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 19:31:53.5120|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.8066ms 404 text/plain
+2018-02-24 19:32:02.0270|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow  
+2018-02-24 19:32:02.0320|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetFlow (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:32:02.0840|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetFlow (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:32:02.0840|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetFlow (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:32:02.1100|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 19:32:02.1360|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRF8P6OL13", Request id "0HLBRF8P6OL13:00000003": An unhandled exception was thrown by the application.
+2018-02-24 19:32:02.1430|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 118.901ms 500 
+2018-02-24 19:32:58.3640|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 19:33:01.6220|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 19:33:01.7850|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 19:33:01.8170|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 19:33:01.8780|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 98.5438ms
+2018-02-24 19:33:01.8890|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 283.1729ms 200 application/json; charset=utf-8
+2018-02-24 19:33:01.9300|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 19:33:01.9370|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 25.8704ms 404 text/plain
+2018-02-24 19:33:12.3940|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 19:33:12.4050|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:33:12.4680|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:33:12.5410|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:33:12.5600|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 19:33:12.5890|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRF9DJDV3J", Request id "0HLBRF9DJDV3J:00000001": An unhandled exception was thrown by the application.
+2018-02-24 19:33:12.5890|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 202.2499ms 500 
+2018-02-24 19:35:41.2750|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 19:35:44.1450|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 19:35:44.2990|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 19:35:44.3100|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 19:35:44.3920|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 92.7995ms
+2018-02-24 19:35:44.4040|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 272.5243ms 200 application/json; charset=utf-8
+2018-02-24 19:35:44.4370|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 19:35:44.4620|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 24.1381ms 404 text/plain
+2018-02-24 19:35:46.6230|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 19:35:46.6360|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:35:46.6990|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:35:46.7100|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:35:46.7370|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 19:35:46.7870|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRFAU1SQSJ", Request id "0HLBRFAU1SQSJ:00000001": An unhandled exception was thrown by the application.
+2018-02-24 19:35:46.7980|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 170.9349ms 500 
+2018-02-24 19:36:05.5400|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 19:36:08.5270|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 19:36:08.6920|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 19:36:08.7230|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 19:36:08.8140|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 106.0432ms
+2018-02-24 19:36:08.8300|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 312.1009ms 200 application/json; charset=utf-8
+2018-02-24 19:36:08.8440|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 19:36:08.8440|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5.6352ms 404 text/plain
+2018-02-24 19:36:10.6910|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 19:36:10.7000|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:36:10.7570|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:36:10.7570|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:36:10.7860|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 19:36:10.8120|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRFB5AE7SJ", Request id "0HLBRFB5AE7SJ:00000001": An unhandled exception was thrown by the application.
+2018-02-24 19:36:10.8120|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 127.3405ms 500 
+2018-02-24 19:36:12.0420|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 19:36:12.0520|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:36:12.1030|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:36:12.1170|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:36:12.1370|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 19:36:12.1810|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRFB5AE7SJ", Request id "0HLBRFB5AE7SJ:00000002": An unhandled exception was thrown by the application.
+2018-02-24 19:36:12.2080|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 146.1005ms 500 
+2018-02-24 19:36:42.1090|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 19:36:45.2240|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 19:36:45.3720|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 19:36:45.4070|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 19:36:45.4940|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 116.0994ms
+2018-02-24 19:36:45.5030|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 294.4113ms 200 application/json; charset=utf-8
+2018-02-24 19:36:45.5390|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 19:36:45.5650|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.0894ms 404 text/plain
+2018-02-24 19:37:00.4720|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 19:37:00.4830|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:37:00.5480|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:37:00.5570|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:37:00.5760|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 19:37:00.6020|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRFBG9AIH3", Request id "0HLBRFBG9AIH3:00000001": An unhandled exception was thrown by the application.
+2018-02-24 19:37:00.6020|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 136.8009ms 500 
+2018-02-24 19:37:11.7730|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 19:37:14.5720|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 19:37:14.7340|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 19:37:14.7540|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 19:37:14.8180|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 92.5775ms
+2018-02-24 19:37:14.8350|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 272.3ms 200 application/json; charset=utf-8
+2018-02-24 19:37:14.8710|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 19:37:14.8840|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 24.6773ms 404 text/plain
+2018-02-24 19:37:20.1200|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 19:37:20.1390|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:37:20.2020|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:37:20.2090|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:37:20.2310|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 19:37:20.2600|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRFBP0TN43", Request id "0HLBRFBP0TN43:00000001": An unhandled exception was thrown by the application.
+2018-02-24 19:37:20.2600|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 156.5566ms 500 
+2018-02-24 19:40:55.3380|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 19:40:55.5460|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 19:40:55.5790|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 19:40:55.6370|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 96.4642ms
+2018-02-24 19:40:55.6650|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 339.5655ms 200 application/json; charset=utf-8
+2018-02-24 19:40:55.6790|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 19:40:55.6790|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.9782ms 404 text/plain
+2018-02-24 19:40:57.4280|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 19:40:57.4280|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:40:57.4890|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:40:57.4890|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:40:57.5170|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 19:40:57.5450|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRFDQPLMPJ", Request id "0HLBRFDQPLMPJ:00000001": An unhandled exception was thrown by the application.
+2018-02-24 19:40:57.5500|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 135.5855ms 500 
+2018-02-24 19:45:36.3860|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 19:45:36.5130|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (29ms) [Parameters=[@p0='?' (Size = 50), @p1='?', @p2='?' (Size = 200), @p3='?' (Size = 50), @p4='?', @p5='?' (Size = 200), @p6='?' (Size = 50), @p7='?', @p8='?' (Size = 200)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([Id] int, [_Position] [int]);
+MERGE [flows] USING (
+VALUES (@p0, @p1, @p2, 0),
+(@p3, @p4, @p5, 1),
+(@p6, @p7, @p8, 2)) AS i ([Name], [Price], [des], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Name], [Price], [des])
+VALUES (i.[Name], i.[Price], i.[des])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted0;
+
+SELECT [t].[Id] FROM [flows] t
+INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];
+2018-02-24 19:45:36.5770|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-02-24 19:45:36.5770|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 19:45:36.5990|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 19:45:36.6050|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-02-24 19:45:36.6050|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-02-24 19:50:59.2530|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 19:51:02.2360|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 19:51:02.3970|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 19:51:02.4340|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 19:51:02.5060|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 110.1844ms
+2018-02-24 19:51:02.5060|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 308.7723ms 200 application/json; charset=utf-8
+2018-02-24 19:51:02.5540|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 19:51:02.5540|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 24.7637ms 404 text/plain
+2018-02-24 19:51:09.9380|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow/1  
+2018-02-24 19:51:09.9650|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-02-24 19:51:09.9840|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 19:51:09.9940|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 19:51:09.9940|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-02-24 19:51:10.0170|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-02-24 19:51:10.0390|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.Get (FlowWebApi) with arguments (1) - ModelState is Valid
+2018-02-24 19:51:10.0930|FATAL|FlowWebApi.Controllers.FlowController|1异常走起
+2018-02-24 19:51:10.1240|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 19:51:10.1490|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.Get (FlowWebApi) in 169.1444ms
+2018-02-24 19:51:10.1590|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 221.207ms 500 text/plain; charset=utf-8
+2018-02-24 19:51:18.9540|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow/  
+2018-02-24 19:51:18.9640|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:51:19.0120|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:51:19.0120|ERROR|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Request matched multiple actions resulting in ambiguity. Matching actions: FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi)
+FlowWebApi.Controllers.MaterialController.Get (FlowWebApi)
+2018-02-24 19:51:19.0400|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An exception was thrown attempting to execute the error handler.
+2018-02-24 19:51:19.0700|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLBRFJFK5842", Request id "0HLBRFJFK5842:00000004": An unhandled exception was thrown by the application.
+2018-02-24 19:51:19.0800|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 126.3584ms 500 
+2018-02-24 19:53:34.0970|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 19:53:37.3550|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 19:53:37.5350|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 19:53:37.5470|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 19:53:37.6240|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 89.4402ms
+2018-02-24 19:53:37.6380|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 303.6728ms 200 application/json; charset=utf-8
+2018-02-24 19:53:37.6610|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 19:53:37.6680|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.0047ms 404 text/plain
+2018-02-24 19:53:39.9080|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 19:53:39.9340|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-02-24 19:53:39.9640|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 19:53:39.9840|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 19:53:39.9930|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-02-24 19:53:39.9930|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-02-24 19:53:40.0100|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 19:53:40.0100|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[FlowWebApi.Dto.Flow].
+2018-02-24 19:53:40.0430|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi) in 126.0896ms
+2018-02-24 19:53:40.0430|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 141.3204ms 200 application/json; charset=utf-8
+2018-02-24 19:57:27.5550|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 19:57:30.3850|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 19:57:30.5420|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 19:57:30.5760|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 19:57:30.6370|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 100.38ms
+2018-02-24 19:57:30.6370|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 279.4712ms 200 application/json; charset=utf-8
+2018-02-24 19:57:30.6790|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 19:57:30.7050|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 24.7664ms 404 text/plain
+2018-02-24 19:57:33.5060|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow application/json 
+2018-02-24 19:57:33.5230|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-02-24 19:57:33.5500|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 19:57:33.5630|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 19:57:33.5810|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-02-24 19:57:33.5960|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-02-24 19:57:33.6030|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 19:57:33.6300|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x].[Id], [x].[Name], [x].[Price], [x].[des]
+FROM [flows] AS [x]
+ORDER BY [x].[Name]
+2018-02-24 19:57:33.6810|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 19:57:33.7040|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.GetProducts (FlowWebApi) in 186.2239ms
+2018-02-24 19:57:33.7120|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 212.8563ms 200 application/json; charset=utf-8
+2018-02-24 20:03:46.0400|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [flows] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2018-02-24 20:03:49.0730|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-24 20:03:49.2320|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-24 20:03:49.2680|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 20:03:49.3280|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 98.9293ms
+2018-02-24 20:03:49.3350|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 284.0179ms 200 application/json; charset=utf-8
+2018-02-24 20:03:49.3700|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-24 20:03:49.3770|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 25.036ms 404 text/plain
+2018-02-24 20:04:00.7640|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow/1 application/json 
+2018-02-24 20:04:00.9080|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-02-24 20:04:00.9290|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 20:04:00.9420|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 20:04:00.9510|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-02-24 20:04:00.9510|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-02-24 20:04:00.9790|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.Get (FlowWebApi) with arguments (1, False) - ModelState is Valid
+2018-02-24 20:04:01.0650|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (31ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Name], [e].[Price], [e].[des]
+FROM [flows] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2018-02-24 20:04:01.1300|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 20:04:01.1490|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.Get (FlowWebApi) in 357.8339ms
+2018-02-24 20:04:01.1750|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 409.3275ms 200 application/json; charset=utf-8
+2018-02-24 20:04:26.6430|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow/1?includeMaterial=True application/json 
+2018-02-24 20:04:26.6540|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-02-24 20:04:26.6620|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 20:04:26.6620|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 20:04:26.6750|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-02-24 20:04:26.6750|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-02-24 20:04:26.6750|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.Get (FlowWebApi) with arguments (1, True) - ModelState is Valid
+2018-02-24 20:04:26.7620|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__flowId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name], [x].[Price], [x].[des]
+FROM [flows] AS [x]
+WHERE [x].[Id] = @__flowId_0
+ORDER BY [x].[Id]
+2018-02-24 20:04:26.7720|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__flowId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Materials].[Id], [x.Materials].[FlowId], [x.Materials].[Name]
+FROM [materials] AS [x.Materials]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [flows] AS [x0]
+    WHERE [x0].[Id] = @__flowId_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.Materials].[FlowId] = [t].[Id]
+ORDER BY [t].[Id]
+2018-02-24 20:04:26.7720|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 20:04:26.7880|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.Get (FlowWebApi) in 134.2965ms
+2018-02-24 20:04:26.7880|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 159.6081ms 200 application/json; charset=utf-8
+2018-02-24 20:04:59.5120|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow/1?includeMaterial=True application/json 
+2018-02-24 20:04:59.5230|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-02-24 20:04:59.5320|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 20:04:59.5320|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2018-02-24 20:04:59.5450|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2018-02-24 20:04:59.5450|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2018-02-24 20:04:59.5450|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.Get (FlowWebApi) with arguments (1, True) - ModelState is Valid
+2018-02-24 20:05:02.9610|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__flowId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Name], [x].[Price], [x].[des]
+FROM [flows] AS [x]
+WHERE [x].[Id] = @__flowId_0
+ORDER BY [x].[Id]
+2018-02-24 20:05:02.9610|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__flowId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [x.Materials].[Id], [x.Materials].[FlowId], [x.Materials].[Name]
+FROM [materials] AS [x.Materials]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [flows] AS [x0]
+    WHERE [x0].[Id] = @__flowId_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.Materials].[FlowId] = [t].[Id]
+ORDER BY [t].[Id]
+2018-02-24 20:05:02.9610|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-24 20:05:03.0060|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.Get (FlowWebApi) in 3462.5635ms
+2018-02-24 20:05:03.0130|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3498.8973ms 200 application/json; charset=utf-8

@@ -1,0 +1,154 @@
+2018-02-23 15:19:28.0739|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-23 15:19:28.3289|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-23 15:19:28.3289|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-23 15:19:28.4039|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 91.0925ms
+2018-02-23 15:19:28.4119|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 366.4156ms 200 application/json; charset=utf-8
+2018-02-23 15:19:28.4279|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-23 15:19:28.4279|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.1276ms 404 text/plain
+2018-02-23 15:19:37.4529|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow/22 application/json 
+2018-02-23 15:19:37.4949|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.Get (FlowWebApi) with arguments (22) - ModelState is Valid
+2018-02-23 15:19:37.5399|FATAL|FlowWebApi.Controllers.FlowController|22异常走起
+2018-02-23 15:19:37.5399|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-23 15:19:37.5479|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.Get (FlowWebApi) in 67.7688ms
+2018-02-23 15:19:37.5479|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 99.3372ms 500 text/plain; charset=utf-8
+2018-02-23 15:20:35.3614|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-23 15:20:35.5869|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-23 15:20:35.5959|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-23 15:20:35.6629|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 74.9737ms
+2018-02-23 15:20:35.6629|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 346.7308ms 200 application/json; charset=utf-8
+2018-02-23 15:20:35.6839|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-23 15:20:35.6839|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.8458ms 404 text/plain
+2018-02-23 15:20:38.1859|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow/22 application/json 
+2018-02-23 15:20:38.2259|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.Get (FlowWebApi) with arguments (22) - ModelState is Valid
+2018-02-23 15:20:38.2329|INFO|FlowWebApi.Controllers.FlowController|id为22的产品没有被找到
+2018-02-23 15:20:38.2329|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2018-02-23 15:20:38.2329|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.Get (FlowWebApi) in 30.8069ms
+2018-02-23 15:20:38.2489|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 62.3617ms 404 text/plain
+2018-02-23 15:47:31.0724|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-23 15:47:31.3864|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-23 15:47:31.4034|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-23 15:47:31.5214|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 142.8403ms
+2018-02-23 15:47:31.5419|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 514.4652ms 200 application/json; charset=utf-8
+2018-02-23 15:47:31.5574|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-23 15:47:31.5654|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.6957ms 404 text/plain
+2018-02-23 15:47:39.8284|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:48449/api/flow/1 application/json 44
+2018-02-23 15:47:39.9394|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.Delete (FlowWebApi) with arguments (1) - ModelState is Valid
+2018-02-23 15:47:39.9394|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-02-23 15:47:39.9394|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.Delete (FlowWebApi) in 30.9617ms
+2018-02-23 15:47:39.9654|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 134.9425ms 200 
+2018-02-23 16:10:52.0809|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-23 16:10:52.3109|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-23 16:10:52.3109|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-23 16:10:52.3799|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 73.8184ms
+2018-02-23 16:10:52.3799|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 336.0014ms 200 application/json; charset=utf-8
+2018-02-23 16:10:52.4109|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-23 16:10:52.4109|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11.3497ms 404 text/plain
+2018-02-23 16:10:55.0439|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:48449/api/flow/1 application/json 44
+2018-02-23 16:10:55.0849|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.Delete (FlowWebApi) with arguments (1) - ModelState is Valid
+2018-02-23 16:10:55.0969|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-02-23 16:10:55.0969|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.Delete (FlowWebApi) in 28.3376ms
+2018-02-23 16:10:55.1079|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 62.754ms 200 
+2018-02-23 16:17:49.4119|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-23 16:17:49.6589|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-23 16:17:49.6719|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-23 16:17:49.7339|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 78.2694ms
+2018-02-23 16:17:49.7609|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 358.4699ms 200 application/json; charset=utf-8
+2018-02-23 16:17:49.7769|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-23 16:17:49.7769|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.9996ms 404 text/plain
+2018-02-23 16:17:52.1779|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:48449/api/flow/1 application/json 44
+2018-02-23 16:17:52.2169|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.Delete (FlowWebApi) with arguments (1) - ModelState is Valid
+2018-02-23 16:17:52.2309|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-02-23 16:17:52.2309|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.Delete (FlowWebApi) in 30.2322ms
+2018-02-23 16:17:52.2419|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 66.8505ms 200 
+2018-02-23 16:18:31.2889|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-23 16:18:31.5079|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-23 16:18:31.5369|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-23 16:18:31.6029|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 98.4273ms
+2018-02-23 16:18:31.6129|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 353.7104ms 200 application/json; charset=utf-8
+2018-02-23 16:18:31.6319|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-23 16:18:31.6579|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10.1536ms 404 text/plain
+2018-02-23 16:18:35.3939|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:48449/api/flow/1 application/json 44
+2018-02-23 16:18:35.4389|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.Delete (FlowWebApi) with arguments (1) - ModelState is Valid
+2018-02-23 16:18:35.4549|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-02-23 16:18:35.4789|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.Delete (FlowWebApi) in 36.209ms
+2018-02-23 16:18:35.4789|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 93.1638ms 200 
+2018-02-23 16:20:18.9589|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-23 16:20:19.2369|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-23 16:20:19.2579|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-23 16:20:19.3219|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 92.6367ms
+2018-02-23 16:20:19.3339|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 405.8573ms 200 application/json; charset=utf-8
+2018-02-23 16:20:19.3479|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-23 16:20:19.3739|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5.1102ms 404 text/plain
+2018-02-23 16:20:23.0549|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:48449/api/flow/1 application/json 44
+2018-02-23 16:20:23.0989|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.Delete (FlowWebApi) with arguments (1) - ModelState is Valid
+2018-02-23 16:20:23.1159|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-02-23 16:20:23.1209|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.Delete (FlowWebApi) in 35.936ms
+2018-02-23 16:20:23.1209|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 75.2346ms 200 
+2018-02-23 16:35:31.1549|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:48449/api/flow/1 application/json 44
+2018-02-23 16:35:31.1879|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.Delete (FlowWebApi) with arguments (1) - ModelState is Valid
+2018-02-23 16:35:31.1879|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2018-02-23 16:35:31.2159|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.Delete (FlowWebApi) in 44.109ms
+2018-02-23 16:35:31.2159|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 68.4669ms 404 text/plain
+2018-02-23 16:43:51.5689|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-23 16:43:51.7899|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-23 16:43:51.8069|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-23 16:43:51.8719|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 87.0322ms
+2018-02-23 16:43:51.8719|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 341.7735ms 200 application/json; charset=utf-8
+2018-02-23 16:43:51.9219|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-23 16:43:51.9469|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.169ms 404 text/plain
+2018-02-23 16:49:22.6049|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-23 16:49:22.8559|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-23 16:49:22.8699|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-23 16:49:22.9339|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 83.9876ms
+2018-02-23 16:49:22.9479|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 370.5503ms 200 application/json; charset=utf-8
+2018-02-23 16:49:22.9639|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-23 16:49:22.9939|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6.494ms 404 text/plain
+2018-02-23 16:49:36.9769|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:48449/api/flow/1 application/json 44
+2018-02-23 16:49:37.0489|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.Delete (FlowWebApi) with arguments (1) - ModelState is Valid
+2018-02-23 16:49:37.0619|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-02-23 16:49:37.0869|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.Delete (FlowWebApi) in 53.6813ms
+2018-02-23 16:49:37.0869|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 121.1205ms 200 
+2018-02-23 16:50:34.1149|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-23 16:50:34.3379|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-23 16:50:34.3379|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-23 16:50:34.4209|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 79.8393ms
+2018-02-23 16:50:34.4319|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 354.2265ms 200 application/json; charset=utf-8
+2018-02-23 16:50:34.4659|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-23 16:50:34.4659|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 24.34ms 404 text/plain
+2018-02-23 16:51:11.4959|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:48449/api/flow/ application/json 31
+2018-02-23 16:51:11.5979|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.Post (FlowWebApi) with arguments (FlowWebApi.Dtos.FlowCreation) - ModelState is Valid
+2018-02-23 16:51:11.6329|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-23 16:51:11.6499|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.Post (FlowWebApi) in 119.6189ms
+2018-02-23 16:51:11.6569|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 163.7688ms 201 application/json; charset=utf-8
+2018-02-23 16:51:25.3429|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:48449/api/flow/4 application/json 31
+2018-02-23 16:51:25.3589|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16.8704ms 404 text/plain
+2018-02-23 16:51:33.4509|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/flow/4 application/json 
+2018-02-23 16:51:33.4809|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.FlowController.Get (FlowWebApi) with arguments (4) - ModelState is Valid
+2018-02-23 16:51:33.5699|FATAL|FlowWebApi.Controllers.FlowController|4异常走起
+2018-02-23 16:51:33.5959|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-23 16:51:33.6039|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.FlowController.Get (FlowWebApi) in 141.5948ms
+2018-02-23 16:51:33.6289|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 158.7778ms 500 text/plain; charset=utf-8
+2018-02-23 17:40:47.8809|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/values  
+2018-02-23 17:40:48.1209|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-23 17:40:48.1459|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-02-23 17:40:48.2149|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.ValuesController.Get (FlowWebApi) in 93.1139ms
+2018-02-23 17:40:48.2149|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 376.4591ms 200 application/json; charset=utf-8
+2018-02-23 17:40:48.2429|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/favicon.ico  
+2018-02-23 17:40:48.2689|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6.6072ms 404 text/plain
+2018-02-23 17:41:01.3999|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:48449/api/MyContext application/json 
+2018-02-23 17:41:01.6749|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'MyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2018-02-23 17:41:11.9529|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (134ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [ProductDB];
+2018-02-23 17:41:12.0369|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (57ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5 EXEC(N'ALTER DATABASE [ProductDB] SET READ_COMMITTED_SNAPSHOT ON;');
+2018-02-23 17:41:12.0689|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [flows] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NULL,
+    [Price] real NOT NULL,
+    CONSTRAINT [PK_flows] PRIMARY KEY ([Id])
+);
+2018-02-23 17:41:12.0689|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FlowWebApi.Controllers.MyContextController.Get (FlowWebApi) with arguments ((null)) - ModelState is Valid
+2018-02-23 17:41:12.0849|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2018-02-23 17:41:12.1099|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FlowWebApi.Controllers.MyContextController.Get (FlowWebApi) in 10681.3632ms
+2018-02-23 17:41:12.1169|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10719.8342ms 200 
